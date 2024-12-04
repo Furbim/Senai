@@ -53,6 +53,37 @@ img.zoom {
     display: none;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
 .custom-font {
     font-family: "Raleway", sans-serif;
 }
@@ -68,8 +99,8 @@ img.zoom {
 
 .carousel-item img {
     width: 100vw;
-    max-height:540px;
-    height: 50vh;
+    max-height: 640px;
+    height: 60vh;
 }
 
 #carouselExampleIndicators {
@@ -89,7 +120,7 @@ img.zoom {
     background: rgb(105, 76, 148);
     background: -moz-linear-gradient(124deg, rgba(105, 76, 148, 1) 7%, rgba(0, 92, 164, 1) 86%);
     background: -webkit-linear-gradient(124deg, rgba(105, 76, 148, 1) 7%, rgba(0, 92, 164, 1) 86%);
-    background: linear-gradient(124deg, rgba(105, 76, 148, 1) 7%, rgba(0, 92, 164, 1) 86%); 
+    background: linear-gradient(124deg, rgba(105, 76, 148, 1) 7%, rgba(0, 92, 164, 1) 86%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#694c94", endColorstr="#005ca4", GradientType=1);
 }
 
@@ -154,16 +185,14 @@ img.zoom {
     color: rgb(255, 255, 255);
     transition: color ease-in-out 200ms;
     transition: transform ease-in-out 200ms !important;
-    padding: px;
+    padding: 1px;
 
 
 }
 
 .options:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: white;
-    border-right: solid white 1px;
-    border-left: solid white 1px;
 
 }
 
@@ -173,14 +202,17 @@ img.zoom {
 
 .carousel-inner img {
     width: 100vw;
-    max-height:540px;
-    height: 50vh;
+    max-height: 400px;
+    height: 75vh;
 
 }
+
+
 
 .btn-outline-primary {
     color: #005ca4 !important;
 }
+
 .btn-primary {
     background-color: #005ca4 !important;
 }
@@ -266,4 +298,7 @@ img.zoom {
     background: rgba(255, 255, 255, 0.7);
     /* Cor ao passar o mouse */
 }
-
+.colorfont svg {
+    fill: black; /* Define a cor dos ícones como preto */
+  }
+    
