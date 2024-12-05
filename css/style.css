@@ -262,7 +262,7 @@ img.zoom {
 }
 
 .mapa-responsive {
-    width: 100% !important;
+    width: 100% ;
     margin-top: 10px;
     height: 500px !important;
     /* Altura padrão para telas maiores */
@@ -273,6 +273,7 @@ img.zoom {
     /* Reduzir altura do mapa em telas menores */
     .mapa-responsive {
         height: 200px !important;
+        width: 90%;
     }
 }
 
@@ -302,3 +303,9 @@ img.zoom {
     fill: black; /* Define a cor dos ícones como preto */
   }
     
+
+  @media (max-width: 768px) {
+    .endereco-texto{
+        font-size: 12px;
+    }
+  }
